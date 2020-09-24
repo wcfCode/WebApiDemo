@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.OptionsDemo2", "OptionsD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.OptionsDemo3", "OptionsDemo3\10.OptionsDemo3.csproj", "{46AA6ECE-3E5D-4D35-8A6B-CD97021A8A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.MiddlewareDemo", "MiddlewareDemo\11.MiddlewareDemo.csproj", "{E1A8489A-EE18-48FE-97BB-4AB1B37B0035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.MiddlewareDemo", "MiddlewareDemo\11.MiddlewareDemo.csproj", "{E1A8489A-EE18-48FE-97BB-4AB1B37B0035}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.ExceptionDemo", "ExceptionDemo\12.ExceptionDemo.csproj", "{9EB5D376-D070-4367-BA38-3B1591A5A23C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.ExceptionDemo", "ExceptionDemo\12.ExceptionDemo.csproj", "{9EB5D376-D070-4367-BA38-3B1591A5A23C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.StaticFilesDemo", "StaticFilesDemo\13.StaticFilesDemo.csproj", "{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{9EB5D376-D070-4367-BA38-3B1591A5A23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EB5D376-D070-4367-BA38-3B1591A5A23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EB5D376-D070-4367-BA38-3B1591A5A23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
