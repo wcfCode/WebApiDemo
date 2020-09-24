@@ -23,8 +23,7 @@ namespace ExceptionDemo.Controllers
             var knownException = ex as IKnownException;
             if (knownException == null)
             {
-                var logger = HttpContext.RequestServices.GetService<ILogger<MyExceptionFilterAttribute>>();
-                logger.LogError(ex, ex.Message);
+                Console.WriteLine(ex + ex.Message);
                 knownException = KnownException.Unknown;
             }
             else

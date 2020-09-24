@@ -10,6 +10,7 @@ namespace ExceptionDemo.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    ////[MyExceptionFilter]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -27,7 +28,8 @@ namespace ExceptionDemo.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new MyServerException("服务出错了", 65);
+            //throw new Exception("未知错误");
+            throw new MyServerException("代码异常", 200);
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
