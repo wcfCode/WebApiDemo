@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.ExceptionDemo", "Excepti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.StaticFilesDemo", "StaticFilesDemo\13.StaticFilesDemo.csproj", "{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.RoutingDemo", "RoutingDemo\14.RoutingDemo.csproj", "{0A97B8F6-1D57-45DF-9873-98B6CAF59DDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FBEB0BE-2BB7-4244-BF4C-889A8667852E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A97B8F6-1D57-45DF-9873-98B6CAF59DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A97B8F6-1D57-45DF-9873-98B6CAF59DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A97B8F6-1D57-45DF-9873-98B6CAF59DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A97B8F6-1D57-45DF-9873-98B6CAF59DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
