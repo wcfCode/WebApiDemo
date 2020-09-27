@@ -31,7 +31,6 @@ namespace DependencyInjectionDemo
             services.AddScoped<IMyScopedService, MyScopedService>();
 
             services.AddTransient<IMyTransientService, MyTransientService>();
-
             #endregion
 
             #region 花式注册
@@ -43,7 +42,7 @@ namespace DependencyInjectionDemo
             //工厂模式注册
             //services.AddSingleton<IOrderService>(serviceProvider =>
             //{
-            //    //将对象拼接注入服务
+            //    //可以将对象拼接注入服务
             //    //serviceProvider.GetService<>();
             //    return new OrderServiceEx();
             //});

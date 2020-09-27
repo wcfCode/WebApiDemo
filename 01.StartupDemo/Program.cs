@@ -40,32 +40,32 @@ namespace _01.StartupDemo
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     Console.WriteLine("执行方法：ConfigureWebHostDefaults");
-                    webBuilder.UseStartup<Startup>();
+                    //webBuilder.UseStartup<Startup>();
 
-                    //webBuilder.ConfigureServices(services =>
-                    //{
-                    //    Console.WriteLine("执行方法：webBuilder.ConfigureServices");
-                    //    //services.AddMvc();
-                    //    // services.AddAuthentication()
-                    //    services.AddControllers();
+                    webBuilder.ConfigureServices(services =>
+                    {
+                        Console.WriteLine("执行方法：webBuilder.ConfigureServices");
+                        //services.AddMvc();
+                        // services.AddAuthentication()
+                        services.AddControllers();
 
-                    //});
+                    });
 
-                    //webBuilder.Configure(app=>
-                    //{
-                    //    Console.WriteLine("执行方法：webBuilder.Configure");
+                    webBuilder.Configure(app =>
+                    {
+                        Console.WriteLine("执行方法：webBuilder.Configure");
 
-                    //    app.UseHttpsRedirection();
+                        app.UseHttpsRedirection();
 
-                    //    app.UseRouting();
+                        app.UseRouting();
 
-                    //    app.UseAuthorization();
+                        app.UseAuthorization();
 
-                    //    app.UseEndpoints(endpoints =>
-                    //    {
-                    //        endpoints.MapControllers();
-                    //    });
-                    //});
+                        app.UseEndpoints(endpoints =>
+                        {
+                            endpoints.MapControllers();
+                        });
+                    });
 
                 });
     }

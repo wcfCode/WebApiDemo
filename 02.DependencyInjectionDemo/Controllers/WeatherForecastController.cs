@@ -48,7 +48,6 @@ namespace DependencyInjectionDemo.Controllers
             Console.WriteLine($"singleton1:{singleton1.GetHashCode()}");
             Console.WriteLine($"singleton2:{singleton2.GetHashCode()}");
 
-
             Console.WriteLine($"transient1:{transient1.GetHashCode()}");
             Console.WriteLine($"transient2:{transient2.GetHashCode()}");
 

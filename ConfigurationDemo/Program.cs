@@ -25,18 +25,19 @@ namespace ConfigurationDemo
             #endregion
 
             #region  二级嵌套
-            //IConfigurationBuilder builder = new ConfigurationBuilder();
-            //builder.AddInMemoryCollection(new Dictionary<string, string>()
-            //   {
-            //       { "section1:key4","value4" },
-            //       { "section2:key5","value5" },
-            //   });
-            //IConfigurationRoot configurationRoot = builder.Build();
+            IConfigurationBuilder builder = new ConfigurationBuilder();
+            builder.AddInMemoryCollection(new Dictionary<string, string>()
+               {
+                   { "section1:key4","value4" },
+                   { "section2:key5","value5" },
 
-            //IConfigurationSection section = configurationRoot.GetSection("section1");
-            //IConfigurationSection section2 = configurationRoot.GetSection("section2");
-            //Console.WriteLine($"key4:{section["key4"]}");
-            //Console.WriteLine($"key5:{section2["key5"]}");
+               });
+            IConfigurationRoot configurationRoot = builder.Build();
+
+            IConfigurationSection section = configurationRoot.GetSection("section1");
+            IConfigurationSection section2 = configurationRoot.GetSection("section2");
+            Console.WriteLine($"key4:{section["key4"]}");
+            Console.WriteLine($"key5:{section2["key5"]}");
             #endregion
 
             #region  多级嵌套
